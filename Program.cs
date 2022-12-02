@@ -142,7 +142,7 @@ int [,,] FillTriArray (int m, int n, int o )
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
-int [,] SpiralFill(int str, int col) // Возможно слишком мулрено, но работает.
+int [,] SpiralFill(int str, int col) // Возможно слишком мудрено, но работает.
 {
     int[,] Massive = new int[str,col];
     int iMin=0;
