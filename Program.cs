@@ -14,7 +14,6 @@
     }
     return Array;
 }
-
 // Задача 54: Задайте двумерный массив. Напишите программу, 
 // которая упорядочит по убыванию элементы каждой строки двумерного массива.
 // Например, задан массив:
@@ -25,7 +24,6 @@
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
-
 int [,] ArraySort(int[,] MassiveInt)
 {
     for (int i=0;i<MassiveInt.GetLength(0);i++)
@@ -45,7 +43,6 @@ int [,] ArraySort(int[,] MassiveInt)
     }
     return MassiveInt;
 }
-
 // Задача 56: Задайте прямоугольный двумерный массив. 
 // Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 // Например, задан массив:
@@ -54,7 +51,6 @@ int [,] ArraySort(int[,] MassiveInt)
 // 8 4 2 4
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
-
 int ArrayMinSumRow(int[,] MassiveInt)
 {
     int [] sumArray = new int [MassiveInt.GetLength(0)];
@@ -76,8 +72,6 @@ int ArrayMinSumRow(int[,] MassiveInt)
         }
     return sumNumber;
 }
-
-
 // Задача 58: Задайте две матрицы. Напишите программу, 
 // которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
@@ -86,7 +80,6 @@ int ArrayMinSumRow(int[,] MassiveInt)
 // Результирующая матрица будет:
 // 18 20
 // 15 18
-
 int [,] MatrixMultiplication (int[,] MassiveInt1, int[,] MassiveInt2)
 {   
     int [,] MatrixMulti = new int [MassiveInt1.GetLength(0),MassiveInt2.GetLength(1)];
@@ -101,8 +94,6 @@ int [,] MatrixMultiplication (int[,] MassiveInt1, int[,] MassiveInt2)
     }
     return MatrixMulti;
 }
-
-
 // Задача 60. ...Сформируйте трёхмерный массив из 
 // неповторяющихся двузначных чисел. Напишите программу, 
 // которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -111,7 +102,6 @@ int [,] MatrixMultiplication (int[,] MassiveInt1, int[,] MassiveInt2)
 // 34(1,0,0) 41(1,1,0)
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
-
 int [,,] FillTriArray (int m, int n, int o )
 {
     int[,,] Array = new int[m,n,o];  
@@ -146,15 +136,12 @@ int [,,] FillTriArray (int m, int n, int o )
     }
     return Array;
 }
-
-
 // Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 // Например, на выходе получается вот такой массив:
 // 01 02 03 04
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
-
 int [,] SpiralFill(int str, int col) // Возможно слишком мулрено, но работает.
 {
     int[,] Massive = new int[str,col];
@@ -205,8 +192,6 @@ int [,] SpiralFill(int str, int col) // Возможно слишком мулр
         }       
     return Massive;
 }
-
-
 Console.WriteLine("Введите номер решаемой задачи (54,56,58,60,62)");
 int taskNumber = int.Parse(Console.ReadLine());
 if (taskNumber==54)
